@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Janani Subramanian | Creative Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #2b2d42, #4e148c);
+      color: white;
+      overflow-x: hidden;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      background: linear-gradient(to right, #f72585, #7209b7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid #ff6d00;
+      margin: 1rem auto;
+      display: block;
+      transition: transform 0.3s ease-in-out;
+    }
+    .profile-img:hover {
+      transform: scale(1.05) rotate(2deg);
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+    }
+    nav a::after {
+      content: "";
+      display: block;
+      height: 3px;
+      background: #f72585;
+      transition: width 0.3s;
+      width: 0;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    section {
+      margin-bottom: 3rem;
+      animation: fadeInUp 1s ease forwards;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #ffbe0b;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1.5rem;
+      background: #f72585;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background: #b5179e;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Janani Subramanian</h1>
+  <p>Front-End Developer | React.js | JavaScript | UI/UX Enthusiast</p>
+  <img src="janani_photo.jpg" alt="Janani Subramanian" class="profile-img"/>
+</header>
+
+<nav>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="skills" class="card">
+  <h2>Technical Skills</h2>
+  <p>HTML5, CSS3, JavaScript (ES6+), React.js, Core Java, Jenkins, GitHub, MySQL</p>
+</section>
+
+<section id="experience" class="card">
+  <h2>Work Experience</h2>
+  <p>Software Developer at Movate Technologies - Built scalable front-end components, participated in Agile ceremonies, won Spot Award for outstanding performance.</p>
+</section>
+
+<section id="projects" class="card">
+  <h2>Projects</h2>
+  <ul>
+    <li><strong>Autolocation Tracker:</strong> Women’s safety app with shake detection & live location alert</li>
+    <li><strong>Disease Diagnoser:</strong> Symptom-based diagnostic app with hospital suggestions</li>
+    <li><strong>Facial Mask Detection:</strong> AI-based real-time compliance & crowd monitoring system</li>
+  </ul>
+</section>
+
+<section id="contact" class="card">
+  <h2>Contact</h2>
+  <p>Email: jananisubramanian003@gmail.com</p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/janani-s-359a07256" target="_blank" class="button">View Profile</a></p>
+  <p>GitHub: <a href="https://github.com/JananiSubramanian1312" target="_blank" class="button">Explore Code</a></p>
+  <a href="Janani_S_Professional_Resume.pdf" class="button" download>Download Resume</a>
+</section>
+
+</body>
+</html>
