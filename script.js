@@ -64,3 +64,8 @@ function showThankYou(event) {
     }
   });
 }
+ window.addEventListener('pageshow', function (event) {
+    if (event.persisted || (window.performance && window.performance.navigation.type === 2)) {
+      document.querySelector('.contact-form').reset();
+    }
+  });
