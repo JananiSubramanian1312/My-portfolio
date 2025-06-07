@@ -44,7 +44,7 @@ projectCards.forEach(card => {
   card.addEventListener("click", () => {
     card.classList.toggle("active");
   });
-});
+})
 
 function showThankYou(event) {
   event.preventDefault();
