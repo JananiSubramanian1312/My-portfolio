@@ -1,3 +1,6 @@
+document.getElementById('navToggle').addEventListener('click', function () {
+  document.getElementById('navMenu').classList.toggle('active');
+});
 // === Scroll Reveal Animation ===
 const revealElements = document.querySelectorAll('section');
 
